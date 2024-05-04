@@ -8,6 +8,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
     />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <style>
     * {
@@ -16,11 +17,16 @@
     }
 
     .box {
+      position: relative;
       width: 200px;
-      height: 200px;
+      height: 380px;
       background-color: lightblue;
       overflow: hidden;
-      transition: height 1s ease-in-out;
+      transition: height 0.75s ease-in-out;
+    }
+
+    .open {
+      width: 200px;
     }
 
     .closed {
@@ -48,6 +54,7 @@
     <button id="myButton">
       <i class="fa-solid fa-plus myicon" style="color: #ff0000"></i>
     </button>
+    <div class="Animated"></div>
     <div id="myBox" class="box">
       <div class="navdiv">
         <ol>
@@ -56,24 +63,13 @@
           <li>HOme</li>
           <li>HOme</li>
           <li>HOme</li>
+          <li>HOme</li>
+          <li>HOme</li>
+          <li>HOme</li>
+          <li>✉</li>
         </ol>
       </div>
     </div>
   </body>
-  <script>
-    onLoad();
-    function onLoad() {
-      toggleButton();
-    }
-
-    function toggleButton() {
-      const myBox = document.getElementById("myBox");
-      const myButton = document.getElementById("myButton");
-
-      myButton.addEventListener("click", () => {
-        myBox.classList.toggle("closed");
-      });
-    }
-  </script>
   <script src="./script.js"></script>
 </html>

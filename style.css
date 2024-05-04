@@ -1,0 +1,18 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.Animated {
+  width: 0px;
+  height: 380px;
+  /* border: 2px solid black; */
+  z-index: 9;
+  position: absolute;
+  background-color: rgba(223, 5, 5, 0.3);
+  transition: width .75s ease-in-out;
+}
+
+.hide{
+  width: 200px;
+}
